@@ -1,0 +1,36 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    background-image: url("images/rainforest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35vw;
+    height: 100vh;
+    color: whitesmoke;
+}
+
+.right{
+    width: 65vw;
+    height: 100vh;
+}
+
+.first{
+    height: 40vh;
+}
+
+.second{
+    height: 30vh;
+}
+
+.third{
+    height: 30vh;
+}
