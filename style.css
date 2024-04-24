@@ -22,6 +22,7 @@ body{
     height: 100vh;
     color: whitesmoke;
     position: relative;
+    overflow: hidden;
 }
 
 .odin-logo{
@@ -38,7 +39,6 @@ body{
 
 .logo-text{
     font-family: "Skranji", system-ui;
-    font-weight: 10;
     font-size: 40px;
 }
 
@@ -50,7 +50,19 @@ body{
 .credits{
     position: absolute;
     bottom: 8px;
-    left: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.info{
+    padding: 200px 0 50px 0;
+    width: 50vw;
+
+}
+
+.info h4{
+    width: 100%;
 }
 .right{
     width: 65vw;
@@ -65,8 +77,19 @@ input{
     width: 100%;
     min-height: 2em;
     margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 2px solid #E5E7EB;
 }
 
+.label-input:focus{
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+
+#new-password:invalid, #confirm-password:invalid{
+    border: 2px solid red;
+}
 .main-form{
     background-color: #ffffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -87,19 +110,20 @@ fieldset{
 
 
 }
-h4, input[type="submit"], p{
+h4, input[type="submit"], p, button{
     margin-left: 20px;
 }
 
-input[type="submit"]{
+button{
     display: block;
     width: 150px;
-    height: 2em;
-    font-size: 1.1rem;
+    height: 3em;
+    font-size: 0.8rem;
     background-color: #596d48;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 10px 20px 10px 20px;
 }
 
 label{
@@ -109,7 +133,8 @@ label{
     text-transform: uppercase;
     font-weight: bold;
     color: #3e4652;
-    font-size: 12px;
+    font-size: 11px;
+    min-width: 200px;
 }
 
 a{
@@ -123,5 +148,13 @@ a{
 }
 
 .submission{
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
+.error{
+    color: red;
+    font-size: 11px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
