@@ -5,9 +5,14 @@
 }
 
 body{
+    width: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: "Josefin slap", sans-serif;
+
 }
+
 
 .left{
     background-image: url("images/rainforest.jpg");
@@ -16,21 +21,107 @@ body{
     width: 35vw;
     height: 100vh;
     color: whitesmoke;
+    position: relative;
 }
 
+.odin-logo{
+    position: absolute;
+    top: 155px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px 0 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text{
+    font-family: "Skranji", system-ui;
+    font-weight: 10;
+    font-size: 40px;
+}
+
+.odin-logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.credits{
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+}
 .right{
     width: 65vw;
     height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.first{
-    height: 40vh;
+input{
+    width: 100%;
+    min-height: 2em;
+    margin: 10px 0 0 0;
 }
 
-.second{
-    height: 30vh;
+.main-form{
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+form{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: auto;
+    padding: 20px;
 }
 
-.third{
-    height: 30vh;
+fieldset{
+    border: none;
+    padding: 0;
+    margin-left: 0;
+
+
+}
+h4, input[type="submit"], p{
+    margin-left: 20px;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 150px;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #596d48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+    padding-right: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3e4652;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bold;
+}
+
+.info, .submission{
+    height: 33vh;
+}
+
+.submission{
+    margin-top: 10px;
 }

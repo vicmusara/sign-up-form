@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Sign</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -12,64 +16,53 @@
     <div class="main">
 
         <div class="left">
-            <div class="background-img">
-                <div class="credits">
-                    <p class="photo-info">
-                        <a href="https://unsplash.com/photos/a-lush-green-forest-filled-with-lots-of-trees-2mZUKdyYQT4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo</a>  by <a href="https://unsplash.com/@zaid_ahm4d?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Zaid Ahmad</a> on <a href="https://unsplash.com/photos/a-lush-green-forest-filled-with-lots-of-trees-2mZUKdyYQT4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-                    </p>
-                </div>
+            <div class="odin-logo">
+                <img src="images/odin-lined.png" alt="Odin Logo"> <span class="logo-text">ODIN</span>
             </div>
 
-            <img src="images/odin-lined.png" alt="Odin Logo"> <span class="logo-text">ODIN</span>
+            <div class="credits">
+                <p class="photo-info">
+                    <a href="https://unsplash.com/photos/a-lush-green-forest-filled-with-lots-of-trees-2mZUKdyYQT4?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash">Photo</a>  by <a href="https://unsplash.com/@zaid_ahm4d?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Zaid Ahmad</a> on <a href="https://unsplash.com/photos/a-lush-green-forest-filled-with-lots-of-trees-2mZUKdyYQT4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+                </p>
+            </div>
 
         </div>
 
         <div class="right">
-
-            <div class="first">
-                <div class="info">
+            <div class="info">
                     <h4>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                         Sign up <em>now</em> to get started.<br/><br/>You <em>know</em> you want to.
                     </h4>
-                </div>
-            </div>
-            <div class="second">
-                <div class="form">
-
-                    <h4>Let's do this</h4>
-                    <form action="example.com/path" method="post">
-
-                        <div class="row">
-                            <label for="first_name" class="first-name">First Name:</label>
-                            <input type="text" id="first_name" name="first_name" placeholder="Thor">
-
-                            <label for="last_name">Last Name:</label>
-                            <input type="text" id="last_name" name="last_name" placeholder="Odinson">
-
-                        </div>
-
-                        <div class="row">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email">
-
-                            <label for="phone_number">Phone Number:</label>
-                            <input type="tel" id="phone_number" name="phone_number">
-                        </div>
-
-                        <div class="row">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password">
-
-                            <label for="confirm_password">Confirm Password:</label>
-                            <input type="password" id="confirm_password" name="confirm_password">
-                        </div>
-                    </form>
-                </div>
             </div>
 
-            <div class="third">
-                <button type="submit">Create Account</button>
+            <div class="main-form">
+                <h4>Let's do this!<br></h4>
+                <form method="post">
+                    <fieldset>
+                        <label for="first-name">First Name: <input id="first-name"
+                                                                   name="first-name" type="text"
+                                                                   required placeholder="Thor" /></label>
+                        <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+                        <label for="new-password">Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="last-name">Last Name: <input id="last-name" name="last-name"
+                                                                 type="text" required
+                                                                 placeholder="Odinson"/></label>
+                        <label for="phone">Phone number: <input id="phone" name="phone" type="tel" required /></label>
+                        <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+                    </fieldset>
+                </form>
+
+            </div>
+
+            <div class="submission">
+                <input type="submit" value="Create Account" />
+
+
                 <p>Already have an account? <a href="#">Log in</a></p>
 
             </div>
